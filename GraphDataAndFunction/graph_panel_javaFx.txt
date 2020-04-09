@@ -1,0 +1,52 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import javax.swing.JPanel;
+
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.scene.chart.XYChart.Series;
+import javafx.scene.layout.HBox;
+
+
+@SuppressWarnings("serial")
+public class GraphPanel extends JPanel{
+	final JFXPanel fxPanel = new JFXPanel();
+	private HBox root = new HBox();
+	private NumberAxis xAxis = new NumberAxis(0,10,1);
+	private NumberAxis yAxis = new NumberAxis(0,1,0.1);
+	private LineChart<Number,Number> lineChart  = new LineChart<Number,Number>(xAxis,yAxis);
+	
+	public GraphPanel(Dimension size) {
+		this.setSize(size);
+		this.setBackground(Color.WHITE);
+		
+		this.add(fxPanel);
+		initDefaultPanel(size);
+	}
+	
+	private void initDefaultPanel(Dimension size) {
+		Scene scene = new Scene(root, size.width-10., size.height-10.);
+		
+		//Définition des axes :
+		xAxis.setTickUnit(1.);
+		yAxis.setTickUnit(1.);
+		
+		//Définition du graphe :
+		fxPanel.setScene(scene);
+	}
+	
+	protected void addGraph(Float[] abs, Float[] ord) {
+		Series<Number, Number> data = new XYChart.Series<Number, Number>();
+		for (int i=0; i<abs.length; i++) {
+			data.getData().add(new XYChart.Data<Number,Number>(abs[i],ord[i]));			
+		}
+		lineChart = new LineChart<Number,Number>(xAxis,yAxis);
+		lineChart.getData().add(data);
+		root.getChildren().add(lineChart);	
+	}
+
+
+}
