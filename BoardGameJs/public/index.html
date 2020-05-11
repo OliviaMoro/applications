@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css" />
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+        
+        <title>InstanceMode</title>
+        <!--script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script-->
+        <script type="text/javascript" src="Carte.js"></script>
+        <script type="text/javascript" src="Case.js"></script>
+        <script type="text/javascript" src="Vide.js"></script>
+        <script type="text/javascript" src="Mur.js"></script>
+        <script type="text/javascript" src="Position.js"></script>
+        <script type="text/javascript" src="Arme.js"></script>
+        <script type="text/javascript" src="Canif.js"></script>
+        <script type="text/javascript" src="Pistolet.js"></script>
+        <script type="text/javascript" src="Fusil.js"></script>
+        <script type="text/javascript" src="Barre.js"></script>
+        <script type="text/javascript" src="Joueur.js"></script>
+        <script type="text/javascript" src="Ennemi.js"></script>
+        <script type="text/javascript" src="DrawGame.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+
+        <style> body {padding: 0; margin: 0;} canvas {vertical-align: middle;} </style>
+
+    </head>
+
+
+	<body>
+
+	    <section id ="info">
+	        <h2>Info joueur :</h2>
+	            <ul>
+	                <li>Nom : <span id="nom">joueur</span> </li>
+	                <li>PV : <span id="pv"> </span> </li>
+	                <li>Arme : <span id="arme"> </span> </li>
+	                <li>Dommage : <span id="dommage"> </span></li>
+	                <li>Action :  <span id="action"> </span></li>
+	                <li>Tour : <span id="tour">0</span> </li>
+	            </ul>
+
+            <h2> Duel :</h2>
+                <p><button id="defence" value="Défence">Défence</button></p>
+                <p><button id="attaque" value="Attaque">Attaque</button></p>    
+
+    	        
+	    </section>
+
+
+
+	    <canvas id="game" width="800" height="800" style="border:1px solid #000000;"></canvas>	
+	      
+	</body>
+    <script type="text/javascript" src="game.js"></script>
+</html>
