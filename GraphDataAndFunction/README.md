@@ -5,6 +5,8 @@ We tried to emultate the basic feature of a plotting application such as Veusz. 
 Go to the tool bar "Données", then select the option "Charger données". A dialog window will open where you can browse to select the data. The data file must be structured like a matrix where to a column corresponds a dataset. The names of the datasets can be given using the following syntax : 
 * dataset1 dataset2 ... 
 
+![Import a dataset](./import.png)
+
 
 ## Create a dataset from scratch
 On the "Données" tab select the "Créer dataset d'une fonction" button. A dialog box will appear with the following field to fill :
@@ -14,6 +16,9 @@ On the "Données" tab select the "Créer dataset d'une fonction" button. A dialo
 * Minimum : minimum value on the x axis (integer)
 * Maximum : maximum value on the x axis (integer)
 * Echantillonage : number of points 
+
+![Create a dataset from a function x2](./create_data_x2.png)
+![Create a dataset from a function float](./create_data_float.png)
 
 
 ## Plot a graph
@@ -36,6 +41,8 @@ There is currently no mean to add legends, but you can differentiate your datase
 ## Title and Fonts 
 To change the the title and the axis names, be sure to be on the graph node on the arborescence ("Arbre" tab). Go to the "Styles" tab and select whichever you want. You may need to refresh the field (title and axis name) on the "Données" tab
 depending on which order you proceed.
+![Create a dataset from a function float](./title_and_font.png)
+
 
 ## Scaling 
 Go to the grahp icon under the page icon on the "Arbre" tab, then "axe X" and "axe Y" can be used :
