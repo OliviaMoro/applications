@@ -124,7 +124,16 @@ public class FunctionDialog extends JDialog{
 					 PythonLambda pl = new PythonLambda();
 					 arrayX = pl.createBoundedArray(min,max,points);
 					 arrayY = pl.arrayPython(arrayX,expr);
-					 
+					 System.out.print("arrayX : ");
+					 for (int i = 0; i < arrayX.length; i++) {
+						  System.out.print(arrayX[i]+" ");
+					 }
+					 System.out.println(" ");
+					 System.out.print("arrayY : ");
+					 for (int i = 0; i < arrayY.length; i++) {
+						  System.out.print(arrayY[i]+" ");
+					 }
+
 					 nomX = fieldNomX.getText();
 					 nomY = fieldNomY.getText();
 					 setVisible(false);

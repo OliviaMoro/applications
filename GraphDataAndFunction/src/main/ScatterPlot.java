@@ -49,18 +49,23 @@ public class ScatterPlot extends BaseGraph{
 				RenderingHints.VALUE_ANTIALIAS_ON);
 
 		if(this.showing) {
+			/*
 			Float deltaX = Math.abs(getMin(arrayX)-getMin(baseX));
 			Float deltaY = Math.abs(getMin(arrayY)-getMin(baseY));
-			/*System.out.println("deltaX :"+deltaX);
+			System.out.println("deltaX :"+deltaX);
 			System.out.println("deltaY :"+deltaY);*/
 
 			graphPoints = new ArrayList<>();
 			for (int i = 0; i < arrayX.length; i++) {
-				int x1 = (int) (deltaX*xScale+(getMax(arrayX)-arrayX[i])*xScale + padding + labelPadding);
-				int y1 = (int) (height-padding-labelPadding-(getMax(arrayY)-arrayY[i])*yScale-deltaY*yScale);
+				//int x1 = (int) (deltaX*xScale+(getMax(arrayX)-arrayX[i])*xScale + padding + labelPadding);
+				//int y1 = (int) (height-padding-labelPadding-(getMax(arrayY)-arrayY[i])*yScale-deltaY*yScale);
+				int x1 = (int) ((arrayX[i])*xScale + padding + labelPadding);
+				int y1 = (int) (height-padding-labelPadding-(arrayY[i])*yScale);
 				//On ajoute pas les points en dehors du domaine visible du graphe
 				if(x1<=width-padding && y1>=padding) {
 					graphPoints.add(new Point(x1, y1));
+					/*System.out.println("x1 :"+x1+" x :"+arrayX[i]);
+					System.out.println("y1 :"+y1+" y :"+arrayY[i]);*/
 				}
 
 			}
