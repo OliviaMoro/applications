@@ -20,7 +20,7 @@ On the "Données" tab select the "Créer dataset d'une fonction" button. A dialo
 Go to the "Données" tab, from there select the x and y dataset you want to plot. Go back to the "Arbre" tab and select the graph icon under the right page icon. The click the scattered plot icon on the tool bar. The dataset should be plot in red by default.
 You can add other datasets on the same page. 
 
-![Plot of functions](chart.png)
+![Plot of functions](./chart.png)
 
 ## Hide/Show a plot
 
