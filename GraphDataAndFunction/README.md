@@ -32,6 +32,7 @@ To Hide/Show a plot :
 * go to the "Arbre" tab
 * select the scatter plot
 * go to the "Données" tab : the Hide/Show Button ("Cacher/Show") is pushable 
+
 ![Select the plot to hide/show](./select.png)
 ![Hide the plot](./hide.png)
 ![Show the plot](./show.png)
@@ -48,6 +49,7 @@ There is currently no mean to add legends, but you can differentiate your datase
 ## Title and Fonts 
 To change the title and the axis names, be sure to be on the graph node on the tree ("Arbre" tab). Go to the "Styles" tab and select whichever you want. You may need to refresh the field (title and axis name) on the "Données" tab
 depending on which order you proceed.
+
 ![Create a dataset from a function float](./title_and_font.png)
 
 
@@ -55,6 +57,7 @@ depending on which order you proceed.
 Go to the graph icon under the page icon on the "Arbre" tab, then "axe X" and "axe Y" can be used :
 * "Axe X" let you adjust the scale on the horizontal axis
 * "Axe Y" let you adjust the scale on the vertical axis
+
 ![Before rescaling](./rescale_before.png)
 ![Rescale dialog box](./rescaling.png)
 ![After rescaling](./rescale_after.png)
