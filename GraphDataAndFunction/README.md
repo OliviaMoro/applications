@@ -28,9 +28,16 @@ You can add other datasets on the same page.
 ![Plot of functions](./chart.png)
 
 ## Hide/Show a plot
-
+To Hide/Show a plot :
+* go to the "Arbre" tab
+* select the scatter plot
+* go to the "Données" tab : the Hide/Show Button ("Cacher/Show") is pushable 
+![Select the plot to hide/show](./select.png)
+![Hide the plot](./hide.png)
+![Show the plot](./show.png)
 
 ## Erase a plot   
+You can erase a plot if you push the erase button ("Effacer") on the "Données" tab. You need to select the plot you want to erase in the "Arbre" tab beforehand. It will only erase the plot on the node tree, not the actual datasets.
 
 
 ## Customisation 
@@ -48,7 +55,9 @@ depending on which order you proceed.
 Go to the graph icon under the page icon on the "Arbre" tab, then "axe X" and "axe Y" can be used :
 * "Axe X" let you adjust the scale on the horizontal axis
 * "Axe Y" let you adjust the scale on the vertical axis
-
+![Before rescaling](./rescale_before.png)
+![Rescale dialog box](./rescaling.png)
+![After rescaling](./rescale_after.png)
 
 
 
